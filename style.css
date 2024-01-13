@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10rem;
+    gap: 20px;
+
+}
+.animated-heading {
+    font-size: 2em;
+    color: #333;
+    animation: fadeInUp 1s ease-in-out;
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.shape{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: -18px -16px 29px -17px rgba(0,0,0,0.75);
+}
+.inner{
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+}
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #56ace6;
+    color: #fff;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Add box shadow transition here */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add box shadow here */
+}
+
+button:hover {
+    background-color: #1e577d;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Add hover box shadow here */
+}
+.circle {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: pink;
+    border: 1px solid black;
+    clip-path: circle(50% at 50% 50%);
+}
+
+.triangle {
+    width: 80px;
+    height: 80px;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 87px solid green;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+.pentagon{
+    width: 80px;
+    height: 80px;
+    
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    background-color: red;
+}
+.rohmbus{
+    width: 80px;
+    height: 80px;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    background-color: aqua;
+}
+.star{
+    width: 80px;
+    height: 80px;
+    background-color: blue;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
